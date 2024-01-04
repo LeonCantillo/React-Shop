@@ -4,6 +4,8 @@ import '../styles/global.css'
 import Layout from '../containers/Layout'
 import Login from '../containers/Login'
 import RecoveryPassword from '../containers/RecoveryPassword'
+import Home from '../pages/Home'
+import NotFound from '../pages/NotFound'
 
 const App = () => {
     return (
