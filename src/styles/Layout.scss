@@ -1,6 +1,7 @@
-@import url(_vars.scss);
+@import 'vars';
 
 .Layout {
     display: grid;
     height: 100vh;
+    place-items: center;
 }

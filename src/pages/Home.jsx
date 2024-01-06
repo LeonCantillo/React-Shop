@@ -1,11 +1,12 @@
 import React from 'react'
-import Header from '../components/Header'
+import ProductList from '../containers/ProductList'
+import '../styles/Home.scss'
 
 const Home = () => {
     return (
-        <div>
-            <Header />
+        <div className='Home'>
             <h1>React Shop</h1>
+            <ProductList />
         </div>
     )
 }
