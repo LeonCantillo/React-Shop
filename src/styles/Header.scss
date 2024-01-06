@@ -1,15 +1,15 @@
 @import 'vars';
 
-nav {
+.header {
     display: flex;
     justify-content: space-between;
     padding: 0 24px;
     border-bottom: 1px solid var(--very-light-pink);
 }
-.menu {
+.header .menu {
     display: none;
 }
-.logo {
+.header .logo {
     width: 100px;
 }
 .navbar-left ul,
