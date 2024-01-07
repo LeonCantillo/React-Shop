@@ -14,7 +14,7 @@ const Header = () => {
   }
     return (
         <header>
-          <nav className='header'>
+          <nav className='header container'>
             <img src={menuHamburguer} alt='menuHamburguer' className='menuHamburguer' />
           
             <div className='navbar-left'>

@@ -4,3 +4,9 @@ body {
     margin: 0;
     font-family: 'Quicksand', sans-serif;
 }
+
+.container {
+    box-sizing: border-box;
+    max-width: var(--container-width);
+    width: 100%;
+}
