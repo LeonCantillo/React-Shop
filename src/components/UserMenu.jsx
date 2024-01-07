@@ -1,8 +1,9 @@
 import React from 'react'
-import '../styles/DesktopMenu.scss'
-const DesktopMenu = () => {
+import '@styles/UserMenu.scss'
+
+const UserMenu = () => {
     return (
-        <div class="desktop-menu">
+        <div class="UserMenu">
             <ul>
                 <li>
                     <a href="/" class="title">My orders</a>
@@ -20,4 +21,4 @@ const DesktopMenu = () => {
     )
 }
 
-export default DesktopMenu
+export default UserMenu
