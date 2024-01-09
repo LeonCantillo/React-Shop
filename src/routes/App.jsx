@@ -12,8 +12,7 @@ import SendEmail from '@pages/SendEmail'
 import Checkout from '@pages/Checkout'
 import Orders from '@pages/Orders'
 import NotFound from '@pages/NotFound'
-import '@styles/global.css'
-import '@styles/forms.css'
+import '@styles/global.scss'
 
 const App = () => {
     return (
