@@ -1,6 +1,7 @@
 :root {
     --white: #FFFFFF;
     --black: #000000;
+    --website-background: #222;
     --very-light-pink: #C7C7C7;
     --text-input-field: #333;
     --hospital-green: #ACD9B2;
@@ -8,5 +9,25 @@
     --md: 16px;
     --lg: 18px;
     --header-height: 60px;
-    --container-width: 1200px;
+    --container-width: 1000px;
+    --size-product-card: 200px;
+}
+
+@media (max-width: 900px) {
+    :root {
+        --container-width: 640px;
+        --size-product-card: 240px;
+
+    }
+}
+@media (max-width: 640px) {
+    :root {
+        --container-width: 380px;
+        --size-product-card: 140px;
+    }
+}
+@media (max-width: 300px) {
+    :root {
+        --container-width: 280px;
+    }
 }
