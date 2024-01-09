@@ -17,11 +17,11 @@ const Login = () => {
                 <input type='password' id='password' placeholder='*********' className='input input-password' />
               </div>
       
-              <input type='submit' value='Log in' className='primary-button login-button' />
+              <input type='submit' value='Log in' className='buttonStyles type-1 login-button' />
               <a href='/'>Forgot my password</a>
             </form>
       
-            <button className='secondary-button signup-button'>Sign up</button>
+            <button className='buttonStyles type-2 signup-button'>Sign up</button>
           </div>
         </div>
     )

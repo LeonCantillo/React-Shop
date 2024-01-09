@@ -16,7 +16,7 @@ const NewPassword = () => {
                     <label for="new-password" className="label">Password</label>
                     <input type="password" id="new-password" placeholder="*********" className="input input-password" />
 
-                    <input type="submit" value="Confirm" className="primary-button login-button" />
+                    <input type="submit" value="Confirm" className="buttonStyles type-1 login-button" />
                 </form>
             </div>
         </div>

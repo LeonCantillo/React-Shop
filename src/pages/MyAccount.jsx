@@ -19,7 +19,7 @@ const MyAccount = () => {
                     <p class="value">*********</p>
                     </div>
             
-                    <input type="submit" value="Edit" class="secondary-button login-button" />
+                    <input type="submit" value="Edit" class="buttonStyles type-2 login-button" />
                 </form>
             </div>
         </div>
