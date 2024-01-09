@@ -1,7 +1,8 @@
 @import 'vars';
 
 .notfound-container {
-    place-self: center;
+    display: grid;
+    place-items: center;
     text-align: center;
 }
 .title-notfound {
