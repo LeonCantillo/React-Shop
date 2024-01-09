@@ -1,12 +1,10 @@
 import React from 'react'
 import ProductList from '@containers/ProductList'
 import '@styles/Home.scss'
-import Header from '@components/Header'
 
 const Home = () => {
     return (
-        <div className='Home'>
-            <Header />
+        <div className='Home container'>
             <h1>React Shop</h1>
             <ProductList />
         </div>
