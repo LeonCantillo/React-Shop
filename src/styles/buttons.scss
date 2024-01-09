@@ -1,0 +1,22 @@
+.buttonStyles {
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Quicksand', sans-serif;
+    font-size: var(--md);
+    font-weight: bold;
+    padding: 17px 0; // 17padd 16font 17 padd = 50 height
+    text-decoration: none;
+    width: 100%;
+}
+
+.type-1 {
+    background-color: var(--hospital-green);
+    border: none;
+    color: var(--white);
+}
+
+.type-2 {
+    background: var(--white);
+    border: 1px solid var(--hospital-green);
+    color: var(--hospital-green);
+}
