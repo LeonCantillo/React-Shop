@@ -8,5 +8,6 @@ body {
 .container {
     box-sizing: border-box;
     max-width: var(--container-width);
+    padding: 0 24px;
     width: 100%;
 }
