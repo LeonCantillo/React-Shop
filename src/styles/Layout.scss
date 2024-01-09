@@ -2,7 +2,10 @@
 
 .Layout {
     display: grid;
-        grid-template-rows: min-content;
     min-height: 100vh;
     place-items: center;
+}
+
+.Layout:has(header) {
+    grid-template-rows: min-content;
 }
