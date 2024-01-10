@@ -1,5 +1,7 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import AppContext from '@context/AppContext'
+import useInitialState from '@hooks/useInitialState'
 import Layout from '@containers/Layout'
 import Header from '@components/Header'
 import Home from '@pages/Home'
@@ -15,23 +17,26 @@ import NotFound from '@pages/NotFound'
 import '@styles/global.scss'
 
 const App = () => {
+    const initialState = useInitialState()
     return (
-        <BrowserRouter>
-            <Layout>
-                <Routes>
-                    <Route exact path='/' element={<><Header /><Home /></>} />
-                    <Route exact path='/login' element={<Login />} />
-                    <Route exact path='/signup' element={<CreateAcount />} />
-                    <Route exact path='/account' element={<><Header /><MyAccount /></>} />
-                    <Route exact path='/new-password' element={<><Header /><NewPassword /></>}/>
-                    <Route exact path='/password-recovery' element={<><Header /><PasswordRecovery /></>} />
-                    <Route exact path='/send-email' element={<><Header /><SendEmail /></>} />
-                    <Route exact path='/checkout' element={<><Header /><Checkout /></>} />
-                    <Route exact path='/orders' element={<><Header /><Orders /></>} />
-                    <Route path='*' element={<NotFound />} />
-                </Routes>
-            </Layout>
-        </BrowserRouter>
+        <AppContext.Provider value={initialState}>
+            <BrowserRouter>
+                <Layout>
+                    <Routes>
+                        <Route exact path='/' element={<><Header /><Home /></>} />
+                        <Route exact path='/login' element={<Login />} />
+                        <Route exact path='/signup' element={<CreateAcount />} />
+                        <Route exact path='/account' element={<><Header /><MyAccount /></>} />
+                        <Route exact path='/new-password' element={<><Header /><NewPassword /></>}/>
+                        <Route exact path='/password-recovery' element={<><Header /><PasswordRecovery /></>} />
+                        <Route exact path='/send-email' element={<><Header /><SendEmail /></>} />
+                        <Route exact path='/checkout' element={<><Header /><Checkout /></>} />
+                        <Route exact path='/orders' element={<><Header /><Orders /></>} />
+                        <Route path='*' element={<NotFound />} />
+                    </Routes>
+                </Layout>
+            </BrowserRouter>
+        </AppContext.Provider>
     )
 }
 
