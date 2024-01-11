@@ -12,12 +12,15 @@ header {
 }
 .header {
     display: flex;
-    justify-content: space-between;
+        align-items: center;
+        justify-content: space-between;
 }
 .header .menuHamburguer {
+    cursor: pointer;
     display: none;
 }
 .header .logo {
+    cursor: pointer;
     width: 100px;
 }
 .header .navbar-left ul,
@@ -32,6 +35,7 @@ header {
 .header .navbar-left {
     display: flex;
 }
+.header .navbar-left a:has(.logo) {place-self: center;}
 .header .navbar-left ul {
     margin-left: 12px;
 }
@@ -54,6 +58,7 @@ header {
     margin-right: 12px;
 }
 .header .navbar-shopping-cart {
+    cursor: pointer;
     position: relative;
 }
 .header .navbar-shopping-cart div {
